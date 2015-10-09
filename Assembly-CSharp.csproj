@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MainMenu\ButtomMainMenu.cs" />
+     <Compile Include="Assets\Scripts\Programming\CompareText.cs" />
      <None Include="Assets\Fonts\Press_Start_2P\OFL.txt" />
+     <None Include="Assets\Fonts\retro_computer\License - READ THIS.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
