@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MainMenu\ButtomMainMenu.cs" />
      <Compile Include="Assets\Scripts\Programming\CompareText.cs" />
+     <Compile Include="Assets\Scripts\Programming\tei.cs" />
      <None Include="Assets\Fonts\Press_Start_2P\OFL.txt" />
      <None Include="Assets\Fonts\retro_computer\License - READ THIS.txt" />
  <Reference Include="UnityEngine.UI">
