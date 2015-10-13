@@ -15,6 +15,7 @@ public class ScoreGameoverProgramming : MonoBehaviour {
 
 	void Update () 
     {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         GetScore();
 	}
 }

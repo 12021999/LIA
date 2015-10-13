@@ -7,6 +7,7 @@ public class ButtomClicked : MonoBehaviour {
 
     public void Buttomclicked(string ButtomName)
     {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         if (ButtomName == "PlayAgainProgramming" || ButtomName == "PlayProgramming")
         {
             Application.LoadLevel("Programming");
