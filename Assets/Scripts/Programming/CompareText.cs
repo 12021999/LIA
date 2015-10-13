@@ -40,6 +40,8 @@ public class CompareText : MonoBehaviour {
     {
         if (this.GetComponent<Text>().text == CodeLine.GetComponent<Text>().text)
         {
+            ScoreInGameProgramming.score += 10;
+            CanPickANumber = true;
             print("consegui");
         }
     }
