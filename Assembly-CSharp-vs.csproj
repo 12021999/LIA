@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Programming\ScoreInGameProgramming.cs" />
      <Compile Include="Assets\Scripts\ProgrammingGameOver\HighScoreProgramming.cs" />
      <Compile Include="Assets\Scripts\ProgrammingGameOver\ScoreGameoverProgramming.cs" />
+     <Compile Include="Assets\Scripts\Sells\Buyer.cs" />
      <None Include="Assets\Fonts\Press_Start_2P\OFL.txt" />
      <None Include="Assets\Fonts\retro_computer\License - READ THIS.txt" />
  <Reference Include="UnityEngine.UI">

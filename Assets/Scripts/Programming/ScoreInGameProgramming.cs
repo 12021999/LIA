@@ -14,6 +14,7 @@ public class ScoreInGameProgramming : MonoBehaviour {
     void Start()
     {
         score = 0;
+        time = 100;
         StartCoroutine(Timer());
     }
 
