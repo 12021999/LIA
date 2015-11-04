@@ -9,15 +9,41 @@ public class TextsSells : MonoBehaviour {
     public GameObject Prices;
     public GameObject Price1;
     public GameObject Price2;
+    public GameObject ScoreSells;
+    public GameObject TimeSells;
     static int Price;
     static int MoneyGaven;
     int MoneyToBuyer;
     int NumberRandomize;
+    public static int TimeSellNum;
 	
     void Start () 
     {
+        TimeSellNum = 50;
         RandomizePrices();
+        StartCoroutine(Timer());
 	}
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (Buyer.Middle)
+        {
+            print("uau");
+            TimeSellNum -= 1;
+        }
+        StartCoroutine(Timer());
+    }
+
+    void TimeSell()
+    {
+        TimeSells.GetComponent<Text>().text = "Tempo : " + TimeSellNum.ToString();
+    }
+
+    void ScoreSell()
+    {
+ 
+    }
 
     void RandomizePrices() 
     { 
@@ -48,7 +74,7 @@ public class TextsSells : MonoBehaviour {
         {
             RandomizePrices();
         }
-        print(NumberRandomize);
+        TimeSell();
         TextsPrices();
 	}
 }

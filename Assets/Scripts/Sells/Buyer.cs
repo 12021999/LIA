@@ -13,7 +13,7 @@ public class Buyer : MonoBehaviour {
     int NumberCharacter = 1;
     bool Right = false;
     bool Wrong = false;
-    bool Middle = false;
+    public static bool Middle = false;
 
     void ChangeCharacters()
     {
@@ -28,10 +28,10 @@ public class Buyer : MonoBehaviour {
             Right = false;
             Wrong = false;
         }
-        if (transform.position.x <= 0)
+        if (transform.position.x <= 0.3f)
         {
             Middle = true;
-            Reborn();
+            //Reborn();
         }
         if (!Middle)
         {
