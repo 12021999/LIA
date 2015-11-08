@@ -45,8 +45,38 @@ public class Buyer : MonoBehaviour {
         transform.position = new Vector3(InitialPositionX,InitialPositionY,0);
     }
 
+    void MissedSells()
+    {
+        if (TextsSells.Missed)
+        {
+            transform.position += new Vector3(0,-0.5f,0);
+        }
+        if (transform.position.y < -5)
+        {
+            Reborn();
+            TextsSells.Missed = false;
+            TextsSells.OutScreen = true;
+        }
+    }
+
+    void BeatedSells()
+    {
+        if (TextsSells.Beated)
+        {
+            transform.position += new Vector3(-0.1f,0,0);
+        }
+        if (transform.position.x < -5)
+        {
+            Reborn();
+            TextsSells.Beated = false;
+            TextsSells.OutScreen = true;
+        }
+    }
+
 	void Update () 
     {
+        MissedSells();
+        BeatedSells();
         Movimentation();
         ChangeCharacters();
 	}

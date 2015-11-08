@@ -27,7 +27,6 @@ public class ScoreInGameProgramming : MonoBehaviour {
 
 	void Update () 
 	{
-        print(time);
         Screen.orientation = ScreenOrientation.PortraitUpsideDown;
         Scoregame = score;
 		Score.GetComponent<Text>().text = "Score : " + Scoregame.ToString();
